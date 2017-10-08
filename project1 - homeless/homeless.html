@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href='css/styles.css' rel='stylesheet' type='text/css'/>
+  <script src='script.js'/></script>
+  <title></title>
+</head>
+<body id='body'>
+  <div id="header">
+  	<!--Main menu-->
+  	<div id="menu">
+  		<a href="../">Home</a>
+  		<a href="../../main/portfolio.php">Portfolio</a>
+  		<a href="../../main/contact-me.php">Contact me</a>
+  		<a href="../../main/about.php">About</a>
+  	</div>
+    <div id='loginDiv'></div>
+  </div>
+
+  <!--Title-->
+  <h1 id='title'>Homeless Game</h1>
+  <h3 style="text-align: center; margin-bottom: 30px">Idea from 'Homeless?' in Google Play Store<h3>
+
+  <div id='statsDiv'>
+    <label id='statsLabel'>Age:</label>
+    <p id='ageInfo'>18 years 0 days</p><br>
+  </div>
+
+  <!--Main starting container-->
+  <div class='container'>
+    <!--Main health div-->
+    <div id='healthDiv'>
+      <!--Health bar-->
+      <div id='healthBarDiv'>
+        <div id='barsLabel'>Health x/300</div>
+        <input class='bars' id='healthBar' type='text' value='25' disabled />
+      </div>
+      <!--Health items-->
+      <div id='healthItems'>
+        <h1 id='barsLabel'>Energy</h1>
+        <div class='items'>
+          <input type='button' class='itemToClick' value='Sleep -------------------- $0' readonly/>
+          <input type='button' class='itemToClick' value='Clinic -------------------- $3' readonly/>
+          <input type='button' class='itemToClick' value='Dr. consultation ----- $15' readonly/>
+          <input type='button' class='itemToClick' value='Hospital --------------- $50' readonly/>
+          <input type='button' class='itemToClick' value='Better hospital ------- $80' readonly/>
+        </div>
+      </div>
+    </div>
+    <!--End of main health div-->
+
+    <!--Start of main hunger div-->
+    <div id='hungerDiv'>
+      <!--Hunger bar-->
+      <div id='hungerBarDiv'>
+        <h1 id='barsLabel'>Hunger x/300</h1>
+        <input class='bars' id='hungerBar' type='text' value='25' disabled />
+      </div>
+      <!--Hunger items-->
+      <div id='hungerItems'>
+        <h1 id='barsLabel'>Food</h1>
+        <div class='items'>
+          <input type='button' class='itemToClick' value='Garbage ---------------- $0' readonly/>
+          <input type='button' class='itemToClick' value='Pastry ------------------- $2' readonly/>
+          <input type='button' class='itemToClick' value='Fastfood -------------- $20' readonly/>
+          <input type='button' class='itemToClick' value='Supermarket --------- $70' readonly/>
+          <input type='button' class='itemToClick' value='Restaurant ---------- $140' readonly/>
+        </div>
+      </div>
+    </div>
+    <!--End of main hunger div-->
+
+    <div id='workDiv'>
+      <!--Cash bar-->
+      <div id='workBarDiv'>
+        <h1 id='barsLabel'>Cash</h1>
+        <input class='bars' id='cashBar' type='text' value='0' disabled />
+      </div>
+      <!--Jobs-->
+      <div id='workItems'>
+        <h1 id='barsLabel'>Jobs</h1>
+        <div class='items'>
+          <input type='button' class='itemToClick' value='Beg ---------------------- $1' readonly/>
+          <input type='button' class='itemToClick' value='Wash cars ------------- $5' readonly/>
+          <input type='button' class='itemToClick' value='Deliveryman --------- $20' readonly/>
+          <input type='button' class='itemToClick' value='Work at bar ---------- $50' readonly/>
+          <input type='button' class='itemToClick' value='Uber driver ---------- $100' readonly/>
+        </div>
+      </div>
+    </div>
+
+    <div id='inventoryDiv'>
+      <!--Items bar-->
+      <div id='workBarDiv'>
+        <h1 id='barsLabel'>Inventory</h1>
+        <input class='bars' id='itemsBar' type='text' value='1/5' disabled />
+      </div>
+      <!--Inventory items-->
+      <div id='inventoryItems'>
+        <h1 id='barsLabel'>Items</h1>
+        <div class='items'>
+          <input type='button' class='itemToClick' value='Will to live -------------- $0' readonly disabled/>
+          <input type='button' id='itemToClick' class='itemToClick' value='Shoes ----------------- $50' readonly/>
+          <input type='button' id='itemToClick' class='itemToClick' value='Bicycle --------------- $500' readonly />
+          <input type='button' id='itemToClick' class='itemToClick' value='Education --------- $5,000' readonly />
+          <input type='button' id='itemToClick' class='itemToClick' value='Car ---------------- $15,000' readonly />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container' id='resetButtonDiv'>
+    <input class='resetButton' id='mainResetButton' type='button' value='Restart'/>
+  </div>
+
+</body>
+</html>

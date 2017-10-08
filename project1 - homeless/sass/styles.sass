@@ -1,0 +1,164 @@
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box
+
+body
+  background-color: rgb(205, 194, 152)
+
+//-----------------------------Start of header----------------------------------
+#header
+  height: 57px
+  background-color: #006641
+  border-bottom: 2px solid #00b371
+  display: flex
+  #loginDiv
+    height: 55px
+    width: 500px
+    display: inline-block
+    margin: 0 auto
+    align-items: center
+  #menu
+    height: 55px
+    width: 497px
+    display: inline-block
+    margin: 0 auto
+    a
+      text-decoration: none
+      color: white
+      font-size: 20px
+      font-family: courier
+      float: left
+      padding-left: 20px
+      padding-right: 20px
+      line-height: 55px
+      &:hover
+        background-color: #262626
+  #loginDiv
+    height: 55px
+    width: 500px
+    display: inline-block
+    margin: 0 auto
+    align-items: center
+//-----------------------------End of header------------------------------------
+
+//-----------------------------Start of body------------------------------------
+#title
+  font-size: 50px
+  color: white
+  text-align: center
+  margin: 20px 0px 20px 0px
+
+.container
+  margin: 0 auto
+  width: 1100px
+  display: flex
+
+#statsDiv
+  margin: 0 auto
+  width: 900px
+  text-align: center
+  margin-bottom: 40px
+  p
+    display: inline-block
+  label
+    font-weight: bold
+    font-size: 1.2em
+
+#healthDiv, #hungerDiv, #workDiv, #inventoryDiv
+  width: 100%
+
+#healthDiv
+  .itemToClick
+    background-color: rgba(146, 209, 128, 1)
+  .bars
+    background-color: rgba(250, 125, 124, 0.56)
+    border: 1px solid rgb(255, 0, 0)
+#hungerDiv
+  .itemToClick
+    background-color: rgba(233, 196, 114, 1)
+  .bars
+    background-color: rgba(250, 125, 124, 0.56)
+    border: 1px solid rgb(255, 0, 0)
+#workDiv
+  .itemToClick
+    background-color: rgba(117, 231, 235, 1)
+#inventoryDiv
+  .itemToClick
+    background-color: rgba(238, 142, 145, 1)
+  #itemToClick
+    background-color: white
+
+#healthBarDiv, #hungerBarDiv, #workBarDiv
+  height: 100px
+
+.items
+  text-align: center
+
+.bars
+  height: 40px
+  width: 200px
+  border: none
+  border-radius: 7px
+  text-align: center
+  font-size: 30px
+  color: black
+  display: block
+  margin: 0 auto
+
+#barsLabel
+  font-size: 25px
+  color: rgb(21, 8, 27)
+  font-weight: bold
+  text-align: center
+  margin-bottom: 10px
+
+.itemToClick
+  font-size: 22px
+  text-align: center
+  margin: 0 auto
+  color: black
+  border-radius: 6px
+  margin-bottom: 5px
+  width: 250px
+  cursor: pointer
+  border: 1px solid black
+
+#gameOverDiv
+  text-align: center
+  margin-top: 100px
+  #gameOverDisplay
+    font-size: 45px
+    font-family: monospace
+    color: white
+    text-align: center
+    margin-top: 50px
+  #playAgainButton
+    height: 50px
+    width: 200px
+    font-size: 25px
+
+#resetButtonDiv
+  text-align: center
+  margin-top: 20px
+
+#mainResetButton
+  height: 30px
+  width: 100px
+  font-size: 19px
+
+.resetButton
+  cursor: pointer
+  background-color: rgb(130, 0, 0)
+  color: white
+  border: 2px solid rgb(130, 0, 0)
+  text-align: center
+  margin: 0 auto
+  margin-top: 50px
+  outline: none
+  border-radius: 5px
+  &:hover
+    background-color: rgb(223, 45, 60)
+  &:active
+    background-color: rgb(199, 69, 80)
+    border: 2px solid rgb(120, 25, 25)
